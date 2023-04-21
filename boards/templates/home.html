@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/9ca08a6a82.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-gray-100">
+    <nav class="w-full border-b-2 border-slate-200 absolute fixed">
+      <div class="w-full max-w-[1000px] mx-auto py-3 flex justify-between">
+        <h1 class="text-2xl font-semibold text-slate-700">
+          open<span class="text-indigo-600"
+            >Foram <i class="fa-regular fa-window-restore"></i
+          ></span>
+        </h1>
+        <div class="flex gap-2">
+          <span class="p-2 text-slate-500"
+            ><i class="fa-solid fa-bell"></i
+          ></span>
+          <span class="text-lg px-3 py-2"
+            ><i class="fa-regular fa-user text-indigo-400"></i
+          ></span>
+          <span class="text-lg px-2 py-2"
+            ><a href=""
+              ><i
+                class="fa-solid fa-arrow-right-from-bracket text-indigo-400"></i></a
+          ></span>
+        </div>
+      </div>
+    </nav>
+    <section class="w-full pt-16">
+      <div class="w-full max-w-[900px] mx-auto grid grid-cols-6">
+        <div class="col-span-2 py-16 pr-4">
+          <p>Boards</p>
+          <div class="py-3 flex flex-wrap gap-1">
+            <span
+              class="border-indigo-200 py-1 px-3 border-2 rounded-lg h-fit text-sm text-slate-500"
+              >Programming</span
+            >
+            <span
+              class="border-indigo-200 py-1 px-3 border-2 rounded-lg h-fit text-sm text-slate-500"
+              >Programming</span
+            >
+            <span
+              class="border-indigo-200 py-1 px-3 border-2 rounded-lg h-fit text-sm text-slate-500"
+              >Programming</span
+            >
+          </div>
+        </div>
+        <div class="col-span-4 py-16 px-4">
+          <h2 class="text-lg font-semibold text-slate-600">Latest thoughts</h2>
+          <div class="mt-5">
+            <div class="bg-white p-8 grid grid-cols-8">
+              <div class="col-span-6">
+                <h3 class="text-indigo-600 text-semibold text-lg mb-3">
+                  Board Name
+                </h3>
+                <p class="text-slate-500 text-md text-justify">Description</p>
+              </div>
+              <div class="col-span-2">
+                <div class="text-sm text-slate-400">
+                  <span>0 Posts</span> <span>0 Topics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
