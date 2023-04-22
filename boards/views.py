@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Board
 
 # Create your views here.
@@ -16,3 +16,7 @@ def home(request, *args, **kwargs):
 def board_topics(request,pk):
     board = Board.objects.get(id=pk)
     return render(request, 'board_topics.html', {'board':board})
+
+def create_topic(request, pk):
+    board = get_object_or_404(Board, id=pk)
+    return render(request, 'create_topic.html',{'board':board})
